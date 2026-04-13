@@ -10,19 +10,25 @@ print("==============================")
 
 # second practice
 
-print("Enter two equal in length lists:")
+print("Enter two lists:")
 
 arr1 = list(map(int, input().split()))
 arr2 = list(map(int, input().split()))
 
+arr1.sort()
+arr2.sort()
+
 res = []
 
-for i in range(len(arr1)):
-    if arr1[i] not in arr2:
-        res.append(arr1[i])
-    if arr2[i] not in arr1:
-        res.append(arr2[i])
-
+if len(arr1) >= len(arr2):
+    for i in range(len(arr1)):
+        if arr1[i] not in arr2:
+            res.append(arr1[i])
+else:
+    for i in range(len(arr2)):
+        if arr2[i] not in arr1:
+            res.append(arr2[i])
+    
 print(res)
 print("==============================")
 
