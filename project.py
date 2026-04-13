@@ -92,3 +92,7 @@ if(s == rev):
     print("isPalindrome")
 else:
     print("notPalindrome")
+
+
+# ---------------------------- Finished --------------------------- #
+
