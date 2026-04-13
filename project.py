@@ -10,7 +10,7 @@ print("==============================")
 
 # second practice
 
-print("Enter two lists:")
+print("Enter two equal in length lists:")
 
 arr1 = list(map(int, input().split()))
 arr2 = list(map(int, input().split()))
